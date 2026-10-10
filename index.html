@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wahome Ndiritu | Full Stack Developer, APIs &amp; Automation</title>
+<meta name="description" content="Wahome Ndiritu is a software engineer in Nairobi, Kenya, building full-stack web applications, API integrations, database-backed systems and automated workflows.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wahome Ndiritu | Full Stack Developer, APIs & Automation">
+<meta property="og:description" content="Full-stack web applications, API integrations and workflow automation from Nairobi, Kenya.">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='30' font-weight='700' text-anchor='middle' fill='%232dd4bf'%3EWN%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0b1220;--s1:#111a2e;--s2:#17223a;--line:#243049;--tx:#e8edf5;--mu:#9aa7bd;--ac:#2dd4bf;--ac2:#60a5fa;--on:#04201c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f8fb;--s1:#fff;--s2:#eef2f8;--line:#d8e0ec;--tx:#0f1a2e;--mu:#52607a;--ac:#0f766e;--ac2:#1d4ed8;--on:#fff}}
+:root[data-theme="light"]{--bg:#f6f8fb;--s1:#fff;--s2:#eef2f8;--line:#d8e0ec;--tx:#0f1a2e;--mu:#52607a;--ac:#0f766e;--ac2:#1d4ed8;--on:#fff}
+:root[data-theme="dark"]{--bg:#0b1220;--s1:#111a2e;--s2:#17223a;--line:#243049;--tx:#e8edf5;--mu:#9aa7bd;--ac:#2dd4bf;--ac2:#60a5fa;--on:#04201c}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:88px 0;border-top:1px solid var(--line)}
+.eyebrow{font:500 13px/1 ui-monospace,Menlo,Consolas,monospace;color:var(--ac);letter-spacing:.08em;text-transform:uppercase;margin:0 0 14px}
+h1,h2,h3{line-height:1.15;margin:0}
+h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin-bottom:12px}
+.lead{color:var(--mu);max-width:62ch;margin:0 0 40px}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 18px ui-monospace,Menlo,monospace;text-decoration:none;color:var(--tx)}.logo span{color:var(--ac)}
+.links{display:flex;align-items:center;gap:26px}
+.links a{text-decoration:none;color:var(--mu);font-size:15px}.links a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--tx);font:600 15px inherit;text-decoration:none;cursor:pointer;min-height:44px}
+.btn.p{background:var(--ac);border-color:var(--ac);color:var(--on)}
+.btn:hover{border-color:var(--ac)}
+.icon-btn{width:44px;height:44px;padding:0;justify-content:center}
+.menu{display:none}
+.hero{padding:72px 0 88px;border-top:0}
+.hero .g{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-size:clamp(36px,6vw,64px);letter-spacing:-.03em;margin-bottom:22px}
+h1 em{font-style:normal;color:var(--ac)}
+.hero p.s{color:var(--mu);font-size:19px;max-width:54ch;margin:0 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.meta{display:flex;flex-wrap:wrap;gap:20px;color:var(--mu);font-size:14px}
+.viz{border:1px solid var(--line);background:var(--s1);border-radius:10px;padding:18px}
+.viz svg{width:100%;height:auto;display:block}
+.grid{display:grid;gap:20px}
+.skills{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.card{border:1px solid var(--line);background:var(--s1);border-radius:10px;padding:24px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{margin:0 0 16px;color:var(--mu);font-size:15px}
+.card.core{border-top:2px solid var(--ac)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{font-size:13px;padding:4px 10px;border:1px solid var(--line);border-radius:6px;color:var(--mu);background:var(--s2)}
+.chips li.t{color:var(--tx);border-color:color-mix(in srgb,var(--ac) 45%,var(--line))}
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px}
+.about .card h3{font-size:17px}.about .card p{margin:0}
+.proj{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.pc{grid-column:span 2;display:flex;flex-direction:column}
+.pc.big{grid-column:span 6;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;padding:32px}
+.tag{font:500 12px ui-monospace,Menlo,monospace;color:var(--ac2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.pc ul.f{margin:0 0 16px;padding-left:18px;color:var(--mu);font-size:15px}
+.pc .chips{margin-bottom:20px}
+.pc .act{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px}
+.pc .btn{padding:8px 14px;font-size:14px;min-height:40px}
+.pend{font-size:13px;color:var(--mu);font-style:italic;margin:0 0 16px}
+.pv{border:1px solid var(--line);border-radius:8px;background:var(--s2);padding:20px;display:flex;flex-direction:column;justify-content:center;gap:10px;font-size:13px;color:var(--mu)}
+.pv b{color:var(--ac);font-weight:500}
+.steps{counter-reset:s;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.steps .card{position:relative;padding-left:64px}
+.steps .card::before{counter-increment:s;content:"0" counter(s);position:absolute;left:22px;top:24px;font:500 15px ui-monospace,Menlo,monospace;color:var(--ac)}
+.steps .card p{margin:0}
+.exp{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.exp li{padding:10px 16px;border:1px dashed var(--line);border-radius:8px;color:var(--mu)}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mu);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer nav{display:flex;flex-wrap:wrap;gap:18px}
+.ct{display:flex;flex-wrap:wrap;gap:12px}
+.note{color:var(--mu);font-size:14px;margin-top:16px}
+.rv{opacity:0;transform:translateY(12px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+@media (max-width:860px){
+ .hero .g,.pc.big{grid-template-columns:1fr}
+ .pc{grid-column:span 6}
+ .pc.big{padding:24px}
+ section{padding:64px 0}
+ .menu{display:inline-flex}
+ .links{display:none;position:absolute;left:0;right:0;top:64px;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 24px 16px}
+ .links.open{display:flex}
+ .links a{padding:12px 0;font-size:17px}
+ .links .btn{justify-content:center;margin-top:8px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+ <a class="logo" href="#top" aria-label="Wahome Ndiritu, home">wn<span>/</span></a>
+ <button class="btn icon-btn menu" id="menu" aria-expanded="false" aria-controls="links" aria-label="Open menu">☰</button>
+ <nav class="links" id="links" aria-label="Primary">
+  <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+  <button class="btn icon-btn" id="theme" aria-label="Toggle light and dark theme">◐</button>
+  <a class="btn p" href="#contact">Collaborate</a>
+ </nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap g">
+ <div>
+  <p class="eyebrow">Software Engineer · Nairobi, Kenya</p>
+  <h1>Web applications, integrations &amp; <em>intelligent workflows.</em></h1>
+  <p class="s">I'm Wahome Ndiritu. I build full-stack web applications, connect systems through APIs, work with relational and document databases, and apply AI and automation where they save real effort.</p>
+  <div class="cta"><a class="btn p" href="#projects">Explore my work</a><a class="btn" href="#contact">Contact me</a><a class="btn" id="gh-hero" href="#">GitHub</a></div>
+  <div class="meta mono"><span>React · Node · PHP · Python</span><span>MySQL · PostgreSQL · MongoDB</span><span>n8n</span></div>
+ </div>
+ <div class="viz" aria-hidden="true">
+  <svg viewBox="0 0 400 300" fill="none" stroke="currentColor" style="color:var(--mu)">
+   <g stroke="var(--line)" stroke-width="1.5"><path d="M110 70 H190 M110 150 H190 M110 230 H190 M250 70 H290 M250 150 H290 M250 230 H290"/><path d="M190 70 V230 M250 70 V230"/></g>
+   <g font-family="ui-monospace,Menlo,monospace" font-size="12" fill="var(--tx)" stroke-width="1.5">
+    <rect x="20" y="50" width="90" height="40" rx="6" fill="var(--s2)" stroke="var(--line)"/><text x="65" y="75" text-anchor="middle" stroke="none">React UI</text>
+    <rect x="20" y="130" width="90" height="40" rx="6" fill="var(--s2)" stroke="var(--line)"/><text x="65" y="155" text-anchor="middle" stroke="none">WordPress</text>
+    <rect x="20" y="210" width="90" height="40" rx="6" fill="var(--s2)" stroke="var(--line)"/><text x="65" y="235" text-anchor="middle" stroke="none">n8n flows</text>
+    <rect x="190" y="130" width="60" height="40" rx="6" fill="var(--s2)" stroke="var(--ac)"/><text x="220" y="155" text-anchor="middle" stroke="none">REST</text>
+    <rect x="290" y="50" width="90" height="40" rx="6" fill="var(--s2)" stroke="var(--line)"/><text x="335" y="75" text-anchor="middle" stroke="none">Node / PHP</text>
+    <rect x="290" y="130" width="90" height="40" rx="6" fill="var(--s2)" stroke="var(--line)"/><text x="335" y="155" text-anchor="middle" stroke="none">SQL</text>
+    <rect x="290" y="210" width="90" height="40" rx="6" fill="var(--s2)" stroke="var(--line)"/><text x="335" y="235" text-anchor="middle" stroke="none">MongoDB</text>
+   </g>
+  </svg>
+ </div>
+</div></section>
+
+<section id="about"><div class="wrap rv">
+ <p class="eyebrow">About</p><h2>Practical engineering, front to back.</h2>
+ <p class="lead">I work across the interface, the server, the database and the integrations between them, and I'm comfortable with the hands-on IT side too: troubleshooting, networking and keeping machines running.</p>
+ <div class="about" id="about-blocks"></div>
+</div></section>
+
+<section id="skills"><div class="wrap rv">
+ <p class="eyebrow">Technical skills</p><h2>The toolkit.</h2>
+ <p class="lead">A grouped inventory of what I work with. Highlighted names are specific technologies; the rest describe capabilities. Depth varies by tool, and my projects are the evidence.</p>
+ <div class="grid skills" id="skills-grid"></div>
+</div></section>
+
+<section id="projects"><div class="wrap rv">
+ <p class="eyebrow">Projects</p><h2>Selected work.</h2>
+ <p class="lead">Descriptions are based on each repository's own documentation. Some client systems have no public repository because of customer privacy; I link the live site instead.</p>
+ <div class="proj" id="proj-grid"></div>
+ <p class="note"><a id="gh-repos" href="#">Browse all repositories on GitHub →</a></p>
+</div></section>
+
+<section id="approach"><div class="wrap rv">
+ <p class="eyebrow">Development approach</p><h2>How I work.</h2>
+ <p class="lead">Working principles, not a track record.</p>
+ <div class="grid steps" id="steps"></div>
+</div></section>
+
+<section id="exploring"><div class="wrap rv">
+ <p class="eyebrow">Currently exploring</p><h2>What I'm learning next.</h2>
+ <ul class="exp" id="exp"></ul>
+</div></section>
+
+<section id="contact"><div class="wrap rv">
+ <p class="eyebrow">Contact</p><h2>Let's talk about what you're building.</h2>
+ <p class="lead">Open to conversations about software projects, web development and technical collaboration.</p>
+ <div class="ct" id="contacts"></div>
+ <p class="note">Email or phone is the quickest route. I haven't added a contact form because one that doesn't reliably deliver is worse than none.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div><strong style="color:var(--tx)">Wahome Ndiritu</strong><br>Nairobi, Kenya · Building things that work.</div>
+ <nav aria-label="Footer"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a id="gh-foot" href="#">GitHub</a></nav>
+</div></footer>
+
+<script>
+/* ===== EDIT YOUR CONTENT HERE ===== */
+const SITE = {
+ links: { github: "https://github.com/8WAHOME", linkedin: null, email: "8ndiritu@gmail.com", phone: "+254181828345" }, // add linkedin/email to show them
+ about: [
+  ["Software development","Building database-backed web applications with a React front end and Node.js/Express or PHP behind it, plus Python for scripting and data analysis."],
+  ["Full-stack approach","Designing the interface, API and data model together so the pieces fit and the product holds up."],
+  ["AI & automation","Using AI tools in my workflow and exploring n8n automations that connect services and remove repetitive steps."],
+  ["Technical problem-solving","Debugging systematically, whether it's an application, a website or a machine on the network."],
+  ["Continuous learning","Picking up new tools by building something real with them."]
+ ],
+ skills: [
+  {n:"Frontend",core:1,d:"Responsive interfaces built to work on any screen.",t:4,i:["HTML5","CSS3","JavaScript","React","Responsive web development","Mobile-friendly interfaces","Website UI implementation","Frontend integration with backend services"]},
+  {n:"Backend",core:1,d:"Server-side logic and the APIs that connect everything.",t:3,i:["PHP","Node.js","Express.js","Server-side application development","REST API development","REST API integration","Backend and frontend integration","Application logic and data handling"]},
+  {n:"Databases & data",core:1,d:"Persistence for real applications, relational and document-based.",t:3,i:["MySQL","PostgreSQL","MongoDB","Relational databases","Document-oriented databases","Database-backed web applications","Data modelling and persistence"]},
+  {n:"Python & data analysis",core:1,d:"Scripting and analysing data, then visualising it.",t:2,i:["Python","Matplotlib","Data analysis","Data visualization"]},
+  {n:"AI & generative AI",core:1,d:"I use AI tools daily in development; building applications that embed AI models is an area I'm exploring.",t:0,i:["Generative AI","AI-assisted software development","AI tools in development workflows","Practical exploration of AI-powered solutions","Integration of AI capabilities where appropriate"]},
+  {n:"Automation & integrations",core:1,d:"Connecting services so repetitive work runs itself.",t:1,i:["n8n","Workflow automation","API-based integrations","Connecting applications and services","Reducing repetitive manual processes","Exploring AI-assisted automation"]},
+  {n:"WordPress & website management",d:"Building, customising and looking after websites.",t:1,i:["WordPress website development","Website maintenance","Website customization","Responsive website implementation","Website troubleshooting"]},
+  {n:"Development tools & platforms",d:"The everyday environment.",t:3,i:["Git","GitHub","Linux","Version control","Repository management","Software debugging","Technical problem-solving"]},
+  {n:"IT support & technical systems",d:"Hands-on diagnostics for hardware, software and networks.",t:0,i:["ICT support","Computer maintenance","Hardware and software troubleshooting","Networking","Technical diagnostics","General IT problem-solving"]}
+ ],
+ projects: [
+  {name:"RummageBazaar",big:1,label:"Full Stack",
+   summary:"A marketplace where people can sell or donate pre-owned items, built to make second-hand goods easier to find and reuse.",
+   problem:"Gives individuals one place to list, sell or give away items they no longer need.",
+   features:["Clerk-based sign-in and sign-up","Personal dashboard to manage listings, including mark-as-sold","Donation mode for free items","Admin dashboard to edit or delete any listing"],
+   stack:["React","Vite","Tailwind CSS","Node.js","Express","MongoDB","Mongoose","Clerk","Render"],
+   arch:["React + Vite client","→ Express REST API (Clerk middleware)","→ MongoDB Atlas via Mongoose"],
+   live:"https://rummagebazaar-1.onrender.com", repo:"https://github.com/8WAHOME/RummageBazaar"},
+  {name:"LaFoodie",label:"Frontend",summary:"A food-focused project for showing recipes and menus in a simple, easy-to-customise layout.",stack:["CSS"],repo:"https://github.com/8WAHOME/LaFoodie"},
+  {name:"RecoveryTrails",label:"PHP · Rehab management",summary:"A rehabilitation centre management system covering accounts, patient admission, counsellors and patient progress, all in one platform.",stack:["PHP"],live:"https://recoverytrails.org",note:"Source code is not public due to customer privacy."},
+  {name:"Goaltract",label:"WordPress",summary:"A WordPress-built website publishing sports coverage and other blog content.",stack:["WordPress"],live:"https://goaltract.com"},
+  {name:"Carpentry-",label:"PHP · Front office",summary:"A front-office system for carpentry and woodwork shops.",stack:["PHP"],repo:"https://github.com/8WAHOME/Carpentry-"}
+ ],
+ approach: [
+  ["Understand the problem first","Choose tools after I know what needs solving, not before."],
+  ["Build for every screen","Interfaces should work on a phone as naturally as on a desktop."],
+  ["Join the layers carefully","Frontend, backend and data model are designed to agree with each other."],
+  ["Connect systems with APIs","Clean interfaces between services beat tangled one-off glue."],
+  ["Use AI and automation on purpose","Apply them where they save real effort, then review the output."],
+  ["Debug methodically","Reproduce, isolate, fix, and leave readable code behind."]
+ ],
+ exploring:["AI-assisted software development","Generative AI applications","Workflow automation with n8n","API integrations","Full-stack architecture","Maintainable software and technical problem-solving"]
+};
+/* ===== RENDERING ===== */
+const $=s=>document.querySelector(s), L=SITE.links;
+const chips=(a,t=0)=>`<ul class="chips">${a.map((x,i)=>`<li${i<t?' class="t"':''}>${x}</li>`).join("")}</ul>`;
+["gh-hero","gh-repos","gh-foot"].forEach(id=>{const a=$("#"+id);a.href=id=="gh-repos"?L.github+"?tab=repositories":L.github;a.target="_blank";a.rel="noopener"});
+$("#about-blocks").innerHTML=SITE.about.map(([h,p])=>`<div class="card"><h3>${h}</h3><p>${p}</p></div>`).join("");
+$("#skills-grid").innerHTML=SITE.skills.map(s=>`<div class="card${s.core?" core":""}"><h3>${s.n}</h3><p>${s.d}</p>${chips(s.i,s.t)}</div>`).join("");
+$("#proj-grid").innerHTML=SITE.projects.map(p=>{
+ const act=`<div class="act">${p.live?`<a class="btn p" href="${p.live}" target="_blank" rel="noopener">${p.big?"Live demo":"View site"}<span class="sr" hidden> of ${p.name}</span> ↗</a>`:""}${p.repo?`<a class="btn" href="${p.repo}" target="_blank" rel="noopener">View source code</a>`:""}</div>`;
+ if(p.big)return `<article class="card pc big"><div><div class="tag">${p.label}</div><h3 style="font-size:28px;margin-bottom:12px">${p.name}</h3><p style="font-size:17px">${p.summary} ${p.problem}</p><ul class="f">${p.features.map(f=>`<li>${f}</li>`).join("")}</ul>${chips(p.stack,p.stack.length)}${act}</div><div class="pv mono" aria-label="Architecture overview">${p.arch.map(a=>`<span><b>${a.slice(0,2)=="→ "?"→":"●"}</b> ${a.replace("→ ","")}</span>`).join("")}</div></article>`;
+ return `<article class="card pc"><div class="tag">${p.label}</div><h3 style="margin-bottom:8px">${p.name}</h3><p>${p.summary}</p>${p.note?`<p class="pend">${p.note}</p>`:""}${p.stack.length?chips(p.stack,p.stack.length):""}${act}</article>`}).join("");
+$("#steps").innerHTML=SITE.approach.map(([h,p])=>`<div class="card"><h3 style="font-size:17px;margin-bottom:6px">${h}</h3><p>${p}</p></div>`).join("");
+$("#exp").innerHTML=SITE.exploring.map(x=>`<li>${x}</li>`).join("");
+$("#contacts").innerHTML=`<a class="btn p" href="${L.github}" target="_blank" rel="noopener">GitHub: 8WAHOME ↗</a>`+(L.linkedin?`<a class="btn" href="${L.linkedin}" target="_blank" rel="noopener">LinkedIn ↗</a>`:"")+(L.email?`<a class="btn" href="mailto:${L.email}">${L.email}</a>`:"")+(L.phone?`<a class="btn" href="tel:${L.phone}">${L.phone}</a>`:"");
+/* menu */
+const m=$("#menu"),nav=$("#links");
+const setMenu=o=>{nav.classList.toggle("open",o);m.setAttribute("aria-expanded",o);m.setAttribute("aria-label",o?"Close menu":"Open menu")};
+m.onclick=()=>setMenu(!nav.classList.contains("open"));
+nav.addEventListener("click",e=>{if(e.target.closest("a"))setMenu(false)});
+document.addEventListener("keydown",e=>{if(e.key=="Escape"&&nav.classList.contains("open")){setMenu(false);m.focus()}});
+/* theme */
+const root=document.documentElement;
+try{const s=localStorage.getItem("theme");if(s)root.dataset.theme=s}catch(e){}
+$("#theme").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme=="dark":!matchMedia("(prefers-color-scheme:light)").matches;const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
+/* reveal */
+if("IntersectionObserver"in window&&!matchMedia("(prefers-reduced-motion:reduce)").matches){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll(".rv").forEach(el=>io.observe(el))}else document.querySelectorAll(".rv").forEach(el=>el.classList.add("in"));
+</script>
+</body>
+</html>
